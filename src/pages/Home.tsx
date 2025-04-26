@@ -1,4 +1,11 @@
 export const Home = () => {
+
+    const platformData = [
+        {label: "Total assets managed", value: "$50M+"},
+        {label: "Asset-backed tokens", value: "20+"},
+        {label: "Average annual return", value: "3.45%"},
+        {label: "User satisfaction rate", value: "90%"},
+    ]
     return (
         <div className="min-h-screen w-full font-sans flex flex-col md:px-10">
             <header className="flex h-20 items-center justify-between w-full">
@@ -17,6 +24,28 @@ export const Home = () => {
                     Get the app
                 </button>
             </header>
+            <main className="flex flex-col items-center w-full">
+                <section className="flex flex-col w-full my-20 items-center justify-center">
+                    <div className="text-center text-7xl font-extrabold w-4xl">Take control of your crypto portfolio</div>
+                    <div className="flex w-full items-center justify-center my-20 gap-20">
+                        <img src="/trading-graph.webp" alt="" className="h-60 w-100"/>
+                        <img src="/trading-mobile.webp" alt="" className="w-120"/>
+                        <img src="/bitcoin.jpg" alt="" className="h-70 w-100"/>
+                    </div>
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 w-7xl">
+                        {platformData.map((data, index) => (
+                            <div key={index} className="flex flex-col border border-gray-800 justify-center gap-4 py-15 rounded-2xl">
+                                <div className="text-6xl font-bold text-center">
+                                    {data.value}
+                                </div>
+                                <p className="text-2xl text-center text-gray-400">
+                                    {data.label}
+                                </p>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            </main>
         </div>
     )
 }
