@@ -75,6 +75,41 @@ export const Home = () => {
                         Check crypto prices
                     </button>
                 </section>
+                <section className="flex flex-col w-full my-20 items-center justify-center">
+                    <div className="flex w-full gap-4">
+                        <div className="w-3/5 h-fit bg-zinc-900 rounded-3xl p-10 flex flex-col gap-20">
+                            <div className="h-3/5 flex justify-center items-center">
+                                <div className="bg-zinc-800 p-10 rounded-2xl  w-fit flex flex-col gap-4 items-center">
+                                    <img src="/bitcoin.png" alt="" className="h-40 w-40" />
+                                    <div className="text-green-300">+2.34%</div>
+                                    <div className="flex gap-2">
+                                        <button className="flex bg-white text-black rounded-4xl py-3 px-10 items-center text-base font-bold">
+                                            Swap
+                                        </button>
+                                        <button className="flex bg-zinc-700 text-white rounded-4xl py-3 px-10 items-center text-base font-bold">
+                                            Buy
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="h-2/5 flex flex-col gap-3">
+                                <div className="text-6xl font-bold px-10 text-start">Crypto bundles</div>
+                                <div className="text-2xl px-10 text-start w-3xl">Diversify your investments with pre-curated crypto collections for smarter, streamlined and secure choices.</div>
+                            </div>
+                        </div>
+                        <div className="w-2/5 bg-zinc-900 rounded-3xl flex flex-col">
+                            <div className="h-2/5 flex flex-col gap-2 items-center justify-center">
+                                <div className="text-6xl font-bold">Cashback rewards</div>
+                                <div className="text-2xl text-center">Earn a percentage back when you spend crypto, maximizing rewards.</div>
+                            </div>
+                            <img src="/girl.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div className="flex w-full gap-4">
+                        <div className="w-2/5 bg-zinc-900 rounded-3xl flex flex-col">
+                        </div>
+                    </div>
+                </section>
             </main>
         </div>
     )
