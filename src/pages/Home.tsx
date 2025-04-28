@@ -110,6 +110,36 @@ export const Home = () => {
                         </div>
                     </div>
                 </section>
+                <section className="flex flex-col w-full my-20 items-center justify-center">
+                    <div className="text-7xl text-center font-bold">
+                        Stay protected <br />every second
+                    </div>
+                    <div className="w-full flex gap-4 my-20">
+                        <div className="w-2/5 bg-indigo-300 rounded-4xl px-10 py-15">
+                            <div className="mb-15 p-8 bg-indigo-400 rounded-full w-fit">
+                                <img src="/bell.png" alt="" className="h-16" />
+                            </div>
+                            <div className="my-8 text-black text-5xl font-extrabold">Real-time alerts</div>
+                            <div className="text-black text-3xl">Receive instant notifications for any account-related changes or transactions.</div>
+                        </div>
+                        <div className="w-3/5 bg-pink-300 rounded-4xl px-10 py-15">
+                            <div className="mb-15 p-8 bg-pink-400 rounded-full w-fit">
+                                <img src="/security.png" alt="" className="h-16" />
+                            </div>
+                            <div className="my-8 text-black text-5xl font-extrabold">End-to-end encrytion</div>
+                            <div className="text-black text-3xl">All data is encrypted from login, keeping your transactions and personal details safe, secure, and fully private.</div>
+                        </div>
+                    </div>
+                    <div className="w-full flex my-20 rounded-4xl bg-zinc-950">
+                        <div className="w-1/2 px-20 flex flex-col justify-center gap-8">
+                            <div className="text-7xl font-bold">Take the first step towards smart investments</div>
+                            <button className="flex bg-white text-black w-fit rounded-4xl py-4 px-6 items-center  font-bold">
+                                Get the app
+                            </button>
+                        </div>
+                        <img src="/colleagues.jpg" alt="" className="w-1/2 overflow-hidden rounded-r-4xl" />
+                    </div>
+                </section>
             </main>
         </div>
     )
