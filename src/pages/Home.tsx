@@ -141,6 +141,38 @@ export const Home = () => {
                     </div>
                 </section>
             </main>
+            <footer className="flex flex-col w-full items-center justify-center">
+                <div className="w-full flex">
+                    <div className="w-1/2 text-4xl font-bold">Finory</div>
+                    <div className="w-1/2 flex">
+                        <div className="md:w-1/3 flex flex-col gap-3">
+                            <div className="text-xl font-medium">Navigation</div>
+                            <ul className="text-gray-400">
+                                <li className="mb-2"><a href="#" className="hover:font-semibold">Features</a></li>
+                                <li className="mb-2"><a href="#" className="hover:font-semibold">Tokens</a></li>
+                                <li className="mb-2"><a href="#" className="hover:font-semibold">Security</a></li>
+                            </ul>
+                        </div>
+                        <div className="md:w-1/3 flex flex-col gap-3">
+                            <div className="text-xl font-medium">Connect</div>
+                            <ul className="text-gray-400">
+                                <li className="mb-2"><a href="#" className="hover:font-semibold">X</a></li>
+                                <li className="mb-2"><a href="#" className="hover:font-semibold">Instagram</a></li>
+                                <li className="mb-2"><a href="#" className="hover:font-semibold">YouTube</a></li>
+                            </ul>
+                        </div>
+                        <div className="md:w-1/3 flex flex-col gap-3">
+                            <div className="text-xl font-medium">Company</div>
+                            <ul className="text-gray-400">
+                                <li className="mb-2"><a href="#" className="hover:font-semibold">Blogs</a></li>
+                                <li className="mb-2"><a href="#" className="hover:font-semibold">Careers</a></li>
+                                <li className="mb-2"><a href="#" className="hover:font-semibold">Documentation</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <p className="w-full my-10">&copy; Finory 2025. All rights reserved.</p>
+            </footer>
         </div>
     )
 }
